@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943573241074",
+    "project_id": "speak-master-8b755",
+    "storage_bucket": "speak-master-8b755.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943573241074:android:af2c97330782050271946b",
+        "android_client_info": {
+          "package_name": "com.example.communicate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWtWmYuQ8jAU8PvQ61xjyCWiNkAa06f4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

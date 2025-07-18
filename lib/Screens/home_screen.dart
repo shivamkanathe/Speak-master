@@ -4,10 +4,13 @@ import 'package:communicate/Screens/translate_screen.dart';
 import 'package:communicate/Screens/verb_screen.dart';
 import 'package:communicate/helperfunction.dart/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
 
+  String? name;
+  HomeScreen({this.name});
+  
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -25,13 +28,29 @@ class _HomeScreenState extends State<HomeScreen> {
     {"name": "Verbs", "img": "assets/verb.png","id":"4"},
   ];
 
+   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print("working this print here or not");
+    welcomeSound();
+  }
+
+  final FlutterTts _flutterTts = FlutterTts();
+
+  welcomeSound(){
+    _flutterTts.setSpeechRate(0.4);
+    _flutterTts.setLanguage("en-US");
+    _flutterTts.speak("Welcome to the speak master, ${widget.name}");
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar( 
         elevation: 0,
         automaticallyImplyLeading: false,
-        title: Text("Welcome, Shivam",style: Theme.of(context).textTheme.bodyLarge,),
+        title: Text("Welcome, ${widget.name}",style: Theme.of(context).textTheme.bodyLarge,),
       ),
       body: GridView.builder(
         padding: EdgeInsets.symmetric(horizontal: 15, vertical: 12),
