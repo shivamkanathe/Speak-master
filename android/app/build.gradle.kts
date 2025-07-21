@@ -11,7 +11,7 @@ plugins {
 android {
     namespace = "com.example.communicate"
     compileSdk = 35
-    ndkVersion = 27
+    ndkVersion = 27.0.11718014
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
