@@ -10,8 +10,8 @@ plugins {
 
 android {
     namespace = "com.example.communicate"
-    compileSdk = 34
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 35
+    ndkVersion = 27
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

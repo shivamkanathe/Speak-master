@@ -21,7 +21,7 @@ class AppTheme {
         color: AppColors.appBarColor,
         elevation: 0,
       ),
-      cardTheme: const CardTheme(
+      cardTheme: const CardThemeData( 
         color: AppColors.cardColor,
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
