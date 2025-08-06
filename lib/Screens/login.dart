@@ -193,8 +193,8 @@ class _UserFormScreenState extends State<UserFormScreen> {
                     value == null || value.isEmpty ? 'Enter phone number' : null,
               ),
               const SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: _isLoading ? null : _submitForm,
+              ElevatedButton( 
+                onPressed: _isLoading ? null : _submitForm, 
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(double.infinity, 50),
                   shape: RoundedRectangleBorder(
